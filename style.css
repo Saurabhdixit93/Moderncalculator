@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +9,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Chivo Mono', monospace;
 }
 
 a {
@@ -26,7 +28,56 @@ body {
     display: grid;
     place-items: center;
 }
-
+.name{
+    background: radial-gradient(circle, rgb(116, 37, 63) 0%, rgb(2, 38, 73) 100%);
+    height: auto;
+    width: auto;
+    text-align: center;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #8a817c;
+    cursor: pointer;
+}
+.name p{
+    height: auto;
+    width: auto;
+    font-weight: 400;
+    margin-top: auto;
+    margin-left: auto;
+    font-size: larger;
+    font-style: monospace !important;
+    cursor: pointer;
+}
+.name:hover{
+    transform: scale(1.1);
+}
+/* .theme-toggler2 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: rgb(99, 84, 84);
+    cursor: pointer;
+    z-index: 1;
+}
+.theme-toggler2.active2 {
+    color: rgb(59, 21, 21);
+}
+.theme-toggler2.active2::before {
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.theme-toggler2::before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: rgb(22, 11, 11);
+    z-index: -1;
+} */
+/* Calculator part */
 .calculator {
     position: relative;
     height: auto;
@@ -35,18 +86,18 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 30px #8a817c;
 }
-
+/* Toggle part */
 .theme-toggler {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 55px;
+    right: 25px;
     color: #fff;
     cursor: pointer;
     z-index: 1;
 }
 
 .theme-toggler.active {
-    color: #333;
+    color: rgb(15, 15, 15);
 }
 
 .theme-toggler.active::before {
@@ -61,7 +112,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #333;
+    background-color: rgb(22, 22, 22);
     z-index: -1;
 }
 
@@ -161,4 +212,11 @@ button#equal {
 
 .calculator.dark button.btn-equal {
     background-color: #566246;
+}
+/* Footer */
+.attribute{
+   color:black;
+   margin-left: 2em;
+   font-size: larger;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
